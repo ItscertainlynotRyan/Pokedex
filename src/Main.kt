@@ -1,5 +1,25 @@
 fun main(){
 
+    // Elementos
+    //"ACO" to listOf("FADA","GELO", "PEDRA")
+    //"AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+    //"DRAGAO" to listOf("DRAGAO")
+    //"ELETRICO" to listOf("AGUA", "VOADOR")
+    //"FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
+    //"FASTASMA" to listOf("PSIQUICO", "FASTASMA"),
+    //"FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+    //"GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA")
+    //"INSETO" to listOf("PLANTA", "PSÍQUICO")
+    //"LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+    //"NORMAL" to listOf(""),
+    //"PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
+    //"PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
+    //"PSIQUICO" to listOf("LUTADOR", "VENENO")
+    //"TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+    //"VENENO" to listOf("FADA, PLANTA")
+    //"VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"
+
+
     val bulbasaur = mapOf(
         "PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
         "VENENO" to listOf("FADA, PLANTA")
