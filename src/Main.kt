@@ -19,7 +19,6 @@ fun main(){
     //"VENENO" to listOf("FADA, PLANTA")
     //"VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"
 
-
     val bulbasaur = mapOf(
         "PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
         "VENENO" to listOf("FADA, PLANTA")
