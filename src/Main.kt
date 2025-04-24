@@ -144,7 +144,7 @@ fun main(){
         "NIVEL" to 70,
         "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
     )
-    val nidoranFemea = mapOf(
+    val nidoranfe = mapOf(
         "NIVEL" to 10,
         "VENENO" to listOf("FADA", "PLANTA")
     )
@@ -157,7 +157,7 @@ fun main(){
         "VENENO" to listOf("FADA", "PLANTA"),
         "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
     )
-    val nidoranMacho = mapOf(
+    val nidoranma = mapOf(
         "NIVEL" to 10,
         "VENENO" to listOf("FADA", "PLANTA")
     )
@@ -555,7 +555,7 @@ fun main(){
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "PSIQUICO" to listOf("LUTADOR", "VENENO")
     )
-    val mrMime = mapOf(
+    val mrmime = mapOf(
         "NIVEL" to 45,
         "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
