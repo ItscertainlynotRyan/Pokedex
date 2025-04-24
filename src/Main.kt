@@ -29,7 +29,7 @@ fun main(){
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
         "VENENO" to listOf("FADA", "PLANTA")
     )
-    val venousauro = mapOf(
+    val venousaur = mapOf(
         "NIVEL" to 80,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
         "VENENO" to listOf("FADA", "PLANTA")
