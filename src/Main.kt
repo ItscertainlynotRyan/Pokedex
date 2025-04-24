@@ -24,12 +24,12 @@ fun main(){
         "PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
         "VENENO" to listOf("FADA, PLANTA")
     )
-    val ivisaur = mapOf(
+    val ivysaur = mapOf(
         "NIVEL" to 40,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
         "VENENO" to listOf("FADA", "PLANTA")
     )
-    val venousaur = mapOf(
+    val venusaur = mapOf(
         "NIVEL" to 80,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
         "VENENO" to listOf("FADA", "PLANTA")
@@ -51,7 +51,7 @@ fun main(){
         "NIVEL" to 20,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
     )
-    val warturtle = mapOf(
+    val wartortle = mapOf(
         "NIVEL" to 40,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
     )
@@ -546,7 +546,7 @@ fun main(){
         "NIVEL" to 35,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
     )
-    val stayu = mapOf(
+    val staryu = mapOf(
         "NIVEL" to 20,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
     )
@@ -555,7 +555,7 @@ fun main(){
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "PSIQUICO" to listOf("LUTADOR", "VENENO")
     )
-    val mrmime = mapOf(
+    val mrMime = mapOf(
         "NIVEL" to 45,
         "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
@@ -676,16 +676,16 @@ fun main(){
         "NIVEL" to 60,
         "DRAGAO" to listOf("DRAGAO")
     )
-    val dragonaite = mapOf(
+    val dragonite = mapOf(
         "NIVEL" to 100,
         "DRAGAO" to listOf("DRAGAO")
     )
-    val mewtwo = mapOf(
-        "NIVEL" to 250,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
-    )
     val mew = mapOf(
         "NIVEL" to 200,
+        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+    )
+    val mewtwo = mapOf(
+        "NIVEL" to 250,
         "PSIQUICO" to listOf("LUTADOR", "VENENO")
     )
 }
