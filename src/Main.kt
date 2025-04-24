@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
 
     // Elementos
     //"ACO" to listOf("FADA","GELO", "PEDRA")
@@ -20,672 +20,1086 @@ fun main(){
     //"VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"
 
     val bulbasaur = mapOf(
-        "NIVEL" to 20,
         "PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
-        "VENENO" to listOf("FADA, PLANTA")
+        "VENENO" to listOf("FADA, PLANTA"),
+        "NIVEL" to 20,
+        "ATAQUE" to 49,
+        "DEFESA" to 49,
     )
-    val ivisaur = mapOf(
+    val ivysaur = mapOf(
+        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 40,
-        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 62,
+        "DEFESA" to 63,
     )
-    val venousaur = mapOf(
-        "NIVEL" to 80,
+    val venusaur = mapOf(
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 85,
+        "ATAQUE" to 82,
+        "DEFESA" to 83,
     )
     val charmander = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 20,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 52,
+        "DEFESA" to 43,
     )
     val charmeleon = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 40,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 64,
+        "DEFESA" to 58,
     )
     val charizard = mapOf(
-        "NIVEL" to 80,
         "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 85,
+        "ATAQUE" to 84,
+        "DEFESA" to 78,
     )
     val squirtle = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 20,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 48,
+        "DEFESA" to 65,
     )
-    val warturtle = mapOf(
+    val wartortle = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 40,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 63,
+        "DEFESA" to 80,
     )
     val blastoise = mapOf(
-        "NIVEL" to 80,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 85,
+        "ATAQUE" to 83,
+        "DEFESA" to 100,
     )
     val caterpie = mapOf(
+        "INSETO" to listOf("PLANTA", "PSÍQUICO"),
         "NIVEL" to 1,
-        "INSETO" to listOf("PLANTA", "PSÍQUICO")
+        "ATAQUE" to 30,
+        "DEFESA" to 35,
     )
     val metapod = mapOf(
+        "INSETO" to listOf("PLANTA", "PSÍQUICO"),
         "NIVEL" to 10,
-        "INSETO" to listOf("PLANTA", "PSÍQUICO")
+        "ATAQUE" to 20,
+        "DEFESA" to 55,
     )
     val butterfree = mapOf(
-        "NIVEL" to 30,
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 30,
+        "ATAQUE" to 45,
+        "DEFESA" to 50,
     )
     val weedle = mapOf(
-        "NIVEL" to 1,
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 1,
+        "ATAQUE" to 35,
+        "DEFESA" to 30,
     )
     val kakuna = mapOf(
-        "NIVEL" to 10,
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 1,
+        "ATAQUE" to 25,
+        "DEFESA" to 50,
     )
     val beedrill = mapOf(
-        "NIVEL" to 30,
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "VENENO" to listOf("FADA", "PLANTA")
-    )
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 35,
+        "ATAQUE" to 90,
+        "DEFESA" to 40,
+
+        )
     val pidgey = mapOf(
-        "NIVEL" to 1,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 1,
+        "ATAQUE" to 45,
+        "DEFESA" to 40,
     )
     val pidgeotto = mapOf(
-        "NIVEL" to 20,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 20,
+        "ATAQUE" to 60,
+        "DEFESA" to 55,
     )
     val pidgeot = mapOf(
-        "NIVEL" to 65,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 65,
+        "ATAQUE" to 80,
+        "DEFESA" to 75,
     )
     val rattata = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 1,
-        "NORMAL" to listOf("")
-    )
+        "ATAQUE" to 56,
+        "DEFESA" to 35,
+
+        )
     val raticate = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 30,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 81,
+        "DEFESA" to 60,
     )
     val spearow = mapOf(
-        "NIVEL" to 10,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 10,
+        "ATAQUE" to 60,
+        "DEFESA" to 30,
     )
     val fearow = mapOf(
-        "NIVEL" to 50,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 50,
+        "ATAQUE" to 90,
+        "DEFESA" to 65,
     )
     val ekans = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 10,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 60,
+        "DEFESA" to 44,
     )
     val arbok = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 40,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 95,
+        "DEFESA" to 69,
     )
     val pikachu = mapOf(
+        "ELETRICO" to listOf("AGUA", "VOADOR"),
         "NIVEL" to 20,
-        "ELETRICO" to listOf("AGUA", "VOADOR")
+        "ATAQUE" to 55,
+        "DEFESA" to 40,
     )
     val raichu = mapOf(
-        "NIVEL" to 40,
-        "ELETRICO" to listOf("AGUA", "VOADOR")
+        "ELETRICO" to listOf("AGUA", "VOADOR"),
+        "NIVEL" to 65,
+        "ATAQUE" to 90,
+        "DEFESA" to 55,
     )
     val sandshrew = mapOf(
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
         "NIVEL" to 20,
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val sandslash = mapOf(
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
         "NIVEL" to 70,
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "ATAQUE" to 100,
+        "DEFESA" to 110,
     )
     val nidoranfe = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 10,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 47,
+        "DEFESA" to 52,
     )
     val nidorina = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 30,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 70,
+        "DEFESA" to 62,
     )
     val nidoqueen = mapOf(
-        "NIVEL" to 70,
         "VENENO" to listOf("FADA", "PLANTA"),
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
+        "NIVEL" to 70,
+        "ATAQUE" to 92,
+        "DEFESA" to 87,
     )
     val nidoranma = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 10,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 57,
+        "DEFESA" to 40,
     )
     val nidorino = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 30,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 72,
+        "DEFESA" to 57,
     )
     val nidoking = mapOf(
-        "NIVEL" to 70,
         "VENENO" to listOf("FADA", "PLANTA"),
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
+        "NIVEL" to 70,
+        "ATAQUE" to 102,
+        "DEFESA" to 77,
     )
     val clefairy = mapOf(
+        "FADA" to listOf("DRAGAO", "LUTADOR", "SOMBRIO"),
         "NIVEL" to 15,
-        "FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
+        "ATAQUE" to 45,
+        "DEFESA" to 48,
     )
     val clefable = mapOf(
+        "FADA" to listOf("DRAGAO", "LUTADOR", "SOMBRIO"),
         "NIVEL" to 35,
-        "FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
+        "ATAQUE" to 70,
+        "DEFESA" to 73,
     )
     val vulpix = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 20,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 41,
+        "DEFESA" to 40,
     )
     val ninetales = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 45,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 76,
+        "DEFESA" to 75,
     )
     val jigglypuff = mapOf(
-        "NIVEL" to 15,
         "NORMAL" to listOf(""),
-        "FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
+        "FADA" to listOf("DRAGAO", "LUTADOR", "SOMBRIO"),
+        "NIVEL" to 15,
+        "ATAQUE" to 45,
+        "DEFESA" to 20,
     )
     val wigglytuff = mapOf(
-        "NIVEL" to 45,
         "NORMAL" to listOf(""),
-        "FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
+        "FADA" to listOf("DRAGAO", "LUTADOR", "SOMBRIO"),
+        "NIVEL" to 40,
+        "ATAQUE" to 70,
+        "DEFESA" to 45,
     )
     val zubat = mapOf(
-        "NIVEL" to 1,
         "VENENO" to listOf("FADA", "PLANTA"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 1,
+        "ATAQUE" to 45,
+        "DEFESA" to 35,
     )
     val golbat = mapOf(
-        "NIVEL" to 35,
         "VENENO" to listOf("FADA", "PLANTA"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 30,
+        "ATAQUE" to 80,
+        "DEFESA" to 70,
     )
     val oddish = mapOf(
-        "NIVEL" to 1,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 1,
+        "ATAQUE" to 50,
+        "DEFESA" to 55,
     )
     val gloom = mapOf(
-        "NIVEL" to 25,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 25,
+        "ATAQUE" to 65,
+        "DEFESA" to 70,
     )
     val vileplume = mapOf(
-        "NIVEL" to 50,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 50,
+        "ATAQUE" to 80,
+        "DEFESA" to 85,
     )
     val paras = mapOf(
+        "INSETO" to listOf("PLANTA", "PSÍQUICO"),
+        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
         "NIVEL" to 1,
-        "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA")
+        "ATAQUE" to 70,
+        "DEFESA" to 55,
     )
-    val  parasect = mapOf(
-        "NIVEL" to 35,
+    val parasect = mapOf(
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA")
+        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
+        "NIVEL" to 35,
+        "ATAQUE" to 95,
+        "DEFESA" to 80,
     )
     val venonat = mapOf(
-        "NIVEL" to 15,
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 15,
+        "ATAQUE" to 55,
+        "DEFESA" to 50,
     )
     val venomoth = mapOf(
-        "NIVEL" to 50,
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 50,
+        "ATAQUE" to 65,
+        "DEFESA" to 60,
     )
     val diglett = mapOf(
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
         "NIVEL" to 10,
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "ATAQUE" to 55,
+        "DEFESA" to 25,
     )
     val dugtrio = mapOf(
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
         "NIVEL" to 35,
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "ATAQUE" to 100,
+        "DEFESA" to 50,
     )
     val meowth = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 15,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 45,
+        "DEFESA" to 35,
     )
     val persian = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 35,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 70,
+        "DEFESA" to 60,
     )
     val psyduck = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 15,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 52,
+        "DEFESA" to 48,
     )
     val golduck = mapOf(
-        "NIVEL" to 35,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 45,
+        "ATAQUE" to 82,
+        "DEFESA" to 78,
     )
     val mankey = mapOf(
+        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO"),
         "NIVEL" to 15,
-        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+        "ATAQUE" to 80,
+        "DEFESA" to 45,
     )
     val primeape = mapOf(
+        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO"),
         "NIVEL" to 50,
-        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+        "ATAQUE" to 105,
+        "DEFESA" to 60,
     )
     val growlithe = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 25,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 70,
+        "DEFESA" to 45,
     )
     val arcanine = mapOf(
-        "NIVEL" to 60,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
+        "NIVEL" to 85,
+        "ATAQUE" to 110,
+        "DEFESA" to 80,
     )
     val poliwag = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 1,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 50,
+        "DEFESA" to 40,
     )
     val poliwhirl = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 30,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 65,
+        "DEFESA" to 65,
     )
     val poliwrath = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 65,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 95,
+        "DEFESA" to 95,
     )
     val abra = mapOf(
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "NIVEL" to 20,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "ATAQUE" to 20,
+        "DEFESA" to 15,
     )
     val kadabra = mapOf(
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "NIVEL" to 40,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "ATAQUE" to 35,
+        "DEFESA" to 30,
     )
     val alakazam = mapOf(
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "NIVEL" to 85,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "ATAQUE" to 105,
+        "DEFESA" to 45,
     )
     val machop = mapOf(
+        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO"),
         "NIVEL" to 20,
-        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+        "ATAQUE" to 80,
+        "DEFESA" to 50,
     )
     val machoke = mapOf(
+        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO"),
         "NIVEL" to 45,
-        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+        "ATAQUE" to 100,
+        "DEFESA" to 70,
     )
     val machamp = mapOf(
+        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO"),
         "NIVEL" to 85,
-        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+        "ATAQUE" to 130,
+        "DEFESA" to 45,
     )
     val bellsprout = mapOf(
-        "NIVEL" to 1,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 1,
+        "ATAQUE" to 75,
+        "DEFESA" to 35,
     )
     val weepinbell = mapOf(
-        "NIVEL" to 25,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 25,
+        "ATAQUE" to 90,
+        "DEFESA" to 50,
     )
     val victreebel = mapOf(
-        "NIVEL" to 45,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 45,
+        "ATAQUE" to 105,
+        "DEFESA" to 65,
     )
     val tentacool = mapOf(
-        "NIVEL" to 15,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 15,
+        "ATAQUE" to 40,
+        "DEFESA" to 35,
     )
     val tentacruel = mapOf(
-        "NIVEL" to 60,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 60,
+        "ATAQUE" to 70,
+        "DEFESA" to 65,
     )
     val geodude = mapOf(
-        "NIVEL" to 1,
         "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
-        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
+        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
+        "NIVEL" to 1,
+        "ATAQUE" to 80,
+        "DEFESA" to 100,
     )
     val graveler = mapOf(
-        "NIVEL" to 40,
         "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
-        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
+        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
+        "NIVEL" to 40,
+        "ATAQUE" to 95,
+        "DEFESA" to 105,
     )
     val golem = mapOf(
-        "NIVEL" to 85,
         "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
-        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
+        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
+        "NIVEL" to 85,
+        "ATAQUE" to 120,
+        "DEFESA" to 130,
     )
     val ponyta = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 15,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 85,
+        "DEFESA" to 55,
     )
     val rapidash = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 45,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 100,
+        "DEFESA" to 70,
     )
     val slowpoke = mapOf(
-        "NIVEL" to 20,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
+        "NIVEL" to 20,
+        "ATAQUE" to 65,
+        "DEFESA" to 65,
     )
     val slowbro = mapOf(
-        "NIVEL" to 50,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
+        "NIVEL" to 50,
+        "ATAQUE" to 75,
+        "DEFESA" to 110,
     )
     val magnemite = mapOf(
-        "NIVEL" to 15,
         "ELETRICO" to listOf("AGUA", "VOADOR"),
-        "ACO" to listOf("FADA","GELO", "PEDRA")
+        "ACO" to listOf("FADA", "GELO", "PEDRA"),
+        "NIVEL" to 15,
+        "ATAQUE" to 35,
+        "DEFESA" to 70,
     )
     val magneton = mapOf(
-        "NIVEL" to 35,
         "ELETRICO" to listOf("AGUA", "VOADOR"),
-        "ACO" to listOf("FADA","GELO", "PEDRA")
+        "ACO" to listOf("FADA", "GELO", "PEDRA"),
+        "NIVEL" to 35,
+        "ATAQUE" to 60,
+        "DEFESA" to 95,
     )
     val farfetchd = mapOf(
-        "NIVEL" to 50,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 50,
+        "ATAQUE" to 90,
+        "DEFESA" to 55,
     )
     val doduo = mapOf(
-        "NIVEL" to 10,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 10,
+        "ATAQUE" to 85,
+        "DEFESA" to 45,
     )
     val dodrio = mapOf(
-        "NIVEL" to 35,
         "NORMAL" to listOf(""),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 35,
+        "ATAQUE" to 110,
+        "DEFESA" to 70,
     )
     val seel = mapOf(
-        "NIVEL" to 20,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 20,
+        "ATAQUE" to 45,
+        "DEFESA" to 55,
     )
     val dewgong = mapOf(
-        "NIVEL" to 65,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA")
+        "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA"),
+        "NIVEL" to 65,
+        "ATAQUE" to 70,
+        "DEFESA" to 80,
     )
     val grimer = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 15,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 80,
+        "DEFESA" to 50,
     )
     val muk = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 35,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 105,
+        "DEFESA" to 75,
     )
     val shellder = mapOf(
-        "NIVEL" to 10,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
-    )
-    val cloyster =  mapOf(
-        "NIVEL" to 60,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA")
+        "NIVEL" to 10,
+        "ATAQUE" to 65,
+        "DEFESA" to 100,
+    )
+    val cloyster = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA"),
+        "NIVEL" to 60,
+        "ATAQUE" to 95,
+        "DEFESA" to 180,
     )
     val gastly = mapOf(
-        "NIVEL" to 20,
         "FASTASMA" to listOf("PSIQUICO", "FASTASMA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 20,
+        "ATAQUE" to 35,
+        "DEFESA" to 30,
     )
     val haunter = mapOf(
-        "NIVEL" to 45,
         "FASTASMA" to listOf("PSIQUICO", "FASTASMA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 40,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val gengar = mapOf(
-        "NIVEL" to 85,
         "FASTASMA" to listOf("PSIQUICO", "FASTASMA"),
-        "VENENO" to listOf("FADA", "PLANTA")
+        "VENENO" to listOf("FADA", "PLANTA"),
+        "NIVEL" to 85,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val onix = mapOf(
-        "NIVEL" to 50,
         "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
+        "NIVEL" to 50,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val drowzee = mapOf(
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "NIVEL" to 30,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val hypno = mapOf(
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "NIVEL" to 50,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val krabby = mapOf(
-        "NIVEL" to 10,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 20,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val kingler = mapOf(
-        "NIVEL" to 40,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 35,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val voltorb = mapOf(
+        "ELETRICO" to listOf("AGUA", "VOADOR"),
         "NIVEL" to 10,
-        "ELETRICO" to listOf("AGUA", "VOADOR")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val electrode = mapOf(
+        "ELETRICO" to listOf("AGUA", "VOADOR"),
         "NIVEL" to 30,
-        "ELETRICO" to listOf("AGUA", "VOADOR")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val exeggcute = mapOf(
-        "NIVEL" to 10,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
+        "NIVEL" to 10,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val exeggutor = mapOf(
-        "NIVEL" to 65,
         "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
+        "NIVEL" to 65,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val cubone = mapOf(
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
         "NIVEL" to 15,
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val marowak = mapOf(
+        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
         "NIVEL" to 65,
-        "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val hitmonlee = mapOf(
+        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO"),
         "NIVEL" to 60,
-        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val hitmonchan = mapOf(
+        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO"),
         "NIVEL" to 60,
-        "LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val lickitung = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 60,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
-    val  koffing = mapOf(
+    val koffing = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 15,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val weezing = mapOf(
+        "VENENO" to listOf("FADA", "PLANTA"),
         "NIVEL" to 35,
-        "VENENO" to listOf("FADA", "PLANTA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val rhyhorn = mapOf(
-        "NIVEL" to 20,
         "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
-        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
+        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
+        "NIVEL" to 20,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val rhydon = mapOf(
-        "NIVEL" to 85,
         "TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO"),
-        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
+        "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
+        "NIVEL" to 85,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val chansey = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 60,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val tangela = mapOf(
+        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA"),
         "NIVEL" to 50,
-        "PLANTA" to listOf("ÁGUA", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val kangaskhan = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 85,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val horsea = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 10,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val seadra = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 35,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val goldeen = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 10,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val seaking = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 35,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
-    val stayu = mapOf(
+    val staryu = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 20,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val starmie = mapOf(
-        "NIVEL" to 40,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
-    )
-    val mrmime = mapOf(
-        "NIVEL" to 45,
         "PSIQUICO" to listOf("LUTADOR", "VENENO"),
-        "FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
+        "NIVEL" to 40,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
+    )
+    val mrMime = mapOf(
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
+        "FADA" to listOf("DRAGAO", "LUTADOR", "SOMBRIO"),
+        "NIVEL" to 65,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val scyther = mapOf(
-        "NIVEL" to 80,
         "INSETO" to listOf("PLANTA", "PSÍQUICO"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 80,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val jynx = mapOf(
-        "NIVEL" to 80,
         "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA"),
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
+        "NIVEL" to 80,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val electabuzz = mapOf(
+        "ELETRICO" to listOf("AGUA", "VOADOR"),
         "NIVEL" to 80,
-        "ELETRICO" to listOf("AGUA", "VOADOR")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val magmar = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 80,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val pinsir = mapOf(
+        "INSETO" to listOf("PLANTA", "PSÍQUICO"),
         "NIVEL" to 50,
-        "INSETO" to listOf("PLANTA", "PSÍQUICO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val tauros = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 50,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val magikarp = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 1,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val gyarados = mapOf(
-        "NIVEL" to 85,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 80,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val lapras = mapOf(
-        "NIVEL" to 80,
         "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
-        "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA")
+        "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA"),
+        "NIVEL" to 80,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val ditto = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 1,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val eevee = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 20,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val vaporeon = mapOf(
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
         "NIVEL" to 60,
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val jolteon = mapOf(
+        "ELETRICO" to listOf("AGUA", "VOADOR"),
         "NIVEL" to 60,
-        "ELETRICO" to listOf("AGUA", "VOADOR")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val flareon = mapOf(
+        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
         "NIVEL" to 60,
-        "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val porygon = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 45,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val omanyte = mapOf(
-        "NIVEL" to 20,
         "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 20,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val omastar = mapOf(
-        "NIVEL" to 65,
         "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 65,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val kabuto = mapOf(
-        "NIVEL" to 20,
         "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 20,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val kabutops = mapOf(
-        "NIVEL" to 65,
         "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 65,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val aerodactyl = mapOf(
-        "NIVEL" to 100,
         "PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO"),
-        "AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+        "AGUA" to listOf("FOGO", "TERRA", "PEDRA"),
+        "NIVEL" to 100,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val snorlax = mapOf(
+        "NORMAL" to listOf(""),
         "NIVEL" to 85,
-        "NORMAL" to listOf("")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val articuno = mapOf(
-        "NIVEL" to 300,
         "GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 300,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val zapdos = mapOf(
-        "NIVEL" to 300,
         "ELETRICO" to listOf("AGUA", "VOADOR"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 300,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val moltres = mapOf(
-        "NIVEL" to 300,
         "FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO"),
-        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR")
+        "VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"),
+        "NIVEL" to 300,
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val dratini = mapOf(
+        "DRAGAO" to listOf("DRAGAO"),
         "NIVEL" to 20,
-        "DRAGAO" to listOf("DRAGAO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val dragonair = mapOf(
+        "DRAGAO" to listOf("DRAGAO"),
         "NIVEL" to 60,
-        "DRAGAO" to listOf("DRAGAO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
-    val dragonaite = mapOf(
+    val dragonite = mapOf(
+        "DRAGAO" to listOf("DRAGAO"),
         "NIVEL" to 100,
-        "DRAGAO" to listOf("DRAGAO")
-    )
-    val mewtwo = mapOf(
-        "NIVEL" to 250,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
     val mew = mapOf(
+        "PSIQUICO" to listOf("LUTADOR", "VENENO"),
         "NIVEL" to 200,
-        "PSIQUICO" to listOf("LUTADOR", "VENENO")
+        "ATAQUE" to 35,
+        "DEFESA" to 45,
     )
-}
+
+
+        // tela de inicio
+        println("Digite o nome do Player 1: ")
+        val nomePlayer1 = readln() ?: ""
+        println("Digite o nome do Player 2: ")
+        val nomePlayer2 = readLine() ?: ""
+
+        println("A batalha será entre:")
+        println("Player 1: $nomePlayer1")
+        println("Player 2: $nomePlayer2")
+
+        println("Pressione a tecla ENTER para prosseguir com a batalha ")
+        readLine()
+
+        // Listas de Pokémon para os torneios
+        val pokemonsNivel1a19 = listOf(
+            "Abra", "Geodude", "Magnemite", "Poliwag",
+            "Bellsprout", "Goldeen", "Mankey", "Rattata",
+            "Caterpie", "Grimer", "Metapod", "Shellder",
+            "Diglett", "Horsea", "Nidoran♀", "Slowpoke",
+            "Ditto", "Kakuna", "Nidoran♂", "Spearow",
+            "Doduo", "Koffing", "Oddish", "Tentacool",
+            "Ekans", "Krabby", "Paras", "Voltorb",
+            "Exeggcute", "Magikarp", "Pidgey", "Weedle", "Zubat"
+        )
+
+        val pokemonsNivel20a49 = listOf(
+            "Bulbasaur", "Charmander", "Pikachu", "Ivysaur", "Charmeleon", "Wartortle",
+            "Poliwhirl", "Machop", "Magnemite", "Graveler", "Politoed", "Nidoking", "Nidoqueen",
+            "Weepinbell", "Kadabra", "Pidgeotto", "Fearow", "Zubat", "Rhyhorn", "Parasect", "Rhydon"
+        )
+
+        val pokemonsNivel50a100 = listOf(
+            "Aerodactyl", "Alakazam", "Arcanine", "Blastoise", "Chansey", "Charizard",
+            "Clefable", "Cloyster", "Dewgong", "Dodrio", "Dragonair", "Dragonite",
+            "Electabuzz", "Exeggutor", "Farfetch'D", "Fearow", "Flareon", "Gengar",
+            "Golduck", "Golem", "Gyarados", "Hitmonchan", "Hitmonlee", "Hypno", "Jolteon",
+            "Jynx", "Kabutops", "Kangaskhan", "Lapras", "Lickitung", "Machamp", "Magmar",
+            "Magneton", "Marowak", "Mr.Mime", "Nidoking", "Nidoqueen", "Ninetales", "Omastar",
+            "Onix", "Parasect", "Persian", "Pidgeot", "Pinsir", "Poliwrath", "Primeape",
+            "Raichu", "Rapidash", "Rhydon", "Sandslash", "Scyther", "Slowbro", "Snorlax",
+            "Starmie", "Tangela", "Tauros", "Tentacruel", "Vaporeon", "Venomoth", "Venusaur",
+            "Victreebel", "Vileplume"
+        )
+
+        // Escolha do torneio
+        println("Escolha o nível para a batalha: \n1 - Nível 1 (1 ao 19)\n2 - Nível 2 (20 ao 49)\n3 - Nível 3 (50 ao 100)")
+        val nivelEscolhido = readLine()?.toIntOrNull()
+
+        val pokemonsDisponiveis = when (nivelEscolhido) {
+            1 -> pokemonsNivel1a19.toMutableList()
+            2 -> pokemonsNivel20a49.toMutableList()
+            3 -> pokemonsNivel50a100.toMutableList()
+            else -> {
+                println("Opção inválida! Encerrando o programa.")
+                return
+            }
+        }
+
+        val timePlayer1 = mutableListOf<String>()
+        val timePlayer2 = mutableListOf<String>()
+
+        fun mostrarPokemonsDisponiveis(pokemons: List<String>) {
+            println("\nPokémons disponíveis:")
+            pokemons.forEachIndexed { index, pokemon ->
+                print("${index + 1} - $pokemon\t")
+                if ((index + 1) % 5 == 0) println()
+            }
+            println()
+        }
+
+        fun escolherPokemon(timePlayer: MutableList<String>, nomePlayer: String) {
+            mostrarPokemonsDisponiveis(pokemonsDisponiveis)
+            println("$nomePlayer, escolha seu Pokémon (digite o número):")
+            val escolha = readLine()?.toIntOrNull()
+
+            if (escolha != null && escolha in 1..pokemonsDisponiveis.size) {
+                val pokemonEscolhido = pokemonsDisponiveis[escolha - 1]
+                timePlayer.add(pokemonEscolhido)
+                pokemonsDisponiveis.removeAt(escolha - 1)
+                println("$nomePlayer escolheu: $pokemonEscolhido")
+            } else {
+                println("Escolha inválida. Tente novamente.")
+                escolherPokemon(timePlayer, nomePlayer)
+            }
+        }
+
+        // Processo de escolha
+        for (i in 1..3) {
+            escolherPokemon(timePlayer1, nomePlayer1)
+            escolherPokemon(timePlayer2, nomePlayer2)
+        }
+
+        println("\nTimes finais:")
+        println("$nomePlayer1: ${timePlayer1.joinToString(", ")}")
+        println("$nomePlayer2: ${timePlayer2.joinToString(", ")}")
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
