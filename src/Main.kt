@@ -1,24 +1,6 @@
+
 fun main() {
-
-    // Elementos
-    //"ACO" to listOf("FADA","GELO", "PEDRA")
-    //"AGUA" to listOf("FOGO", "TERRA", "PEDRA")
-    //"DRAGAO" to listOf("DRAGAO")
-    //"ELETRICO" to listOf("AGUA", "VOADOR")
-    //"FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
-    //"FASTASMA" to listOf("PSIQUICO", "FASTASMA"),
-    //"FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
-    //"GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA")
-    //"INSETO" to listOf("PLANTA", "PSÍQUICO")
-    //"LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
-    //"NORMAL" to listOf(""),
-    //"PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
-    //"PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
-    //"PSIQUICO" to listOf("LUTADOR", "VENENO")
-    //"TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
-    //"VENENO" to listOf("FADA, PLANTA")
-    //"VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"
-
+    // Pokemons
     val bulbasaur = mapOf(
         "PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
         "VENENO" to listOf("FADA, PLANTA"),
@@ -992,8 +974,156 @@ fun main() {
         "ATAQUE" to 110,
         "DEFESA" to 90,
     )
+    val mapaPokemons = mapOf(
+        "bulbasaur" to bulbasaur,
+        "ivysaur" to ivysaur,
+        "venusaur" to venusaur,
+        "charmander" to charmander,
+        "charmeleon" to charmeleon,
+        "charizard" to charizard,
+        "squirtle" to squirtle,
+        "wartortle" to wartortle,
+        "blastoise" to blastoise,
+        "caterpie" to caterpie,
+        "metapod" to metapod,
+        "butterfree" to butterfree,
+        "weedle" to weedle,
+        "kakuna" to kakuna,
+        "beedrill" to beedrill,
+        "pidgey" to pidgey,
+        "pidgeotto" to pidgeotto,
+        "pidgeot" to pidgeot,
+        "rattata" to rattata,
+        "raticate" to raticate,
+        "spearow" to spearow,
+        "fearow" to fearow,
+        "ekans" to ekans,
+        "arbok" to arbok,
+        "pikachu" to pikachu,
+        "raichu" to raichu,
+        "sandshrew" to sandshrew,
+        "sandslash" to sandslash,
+        "nidoran♀" to nidoranfe,
+        "nidorina" to nidorina,
+        "nidoqueen" to nidoqueen,
+        "nidoran♂" to nidoranma,
+        "nidorino" to nidorino,
+        "nidoking" to nidoking,
+        "clefairy" to clefairy,
+        "clefable" to clefable,
+        "vulpix" to vulpix,
+        "ninetales" to ninetales,
+        "jigglypuff" to jigglypuff,
+        "wigglytuff" to wigglytuff,
+        "zubat" to zubat,
+        "golbat" to golbat,
+        "oddish" to oddish,
+        "gloom" to gloom,
+        "vileplume" to vileplume,
+        "paras" to paras,
+        "parasect" to parasect,
+        "venonat" to venonat,
+        "venomoth" to venomoth,
+        "diglett" to diglett,
+        "dugtrio" to dugtrio,
+        "meowth" to meowth,
+        "persian" to persian,
+        "psyduck" to psyduck,
+        "golduck" to golduck,
+        "mankey" to mankey,
+        "primeape" to primeape,
+        "Growlithe" to growlithe,
+        "arcanine" to arcanine,
+        "poliwag" to poliwag,
+        "poliwhirl" to poliwhirl,
+        "poliwrath" to poliwrath,
+        "abra" to abra,
+        "kadabra" to kadabra,
+        "alakazan" to alakazam,
+        "machop" to machop,
+        "machoke" to machoke,
+        "machamp" to machamp,
+        "bellsprout" to bellsprout,
+        "weepinbell" to weepinbell,
+        "victreebel" to victreebel,
+        "tentacool" to tentacool,
+        "tentacruel" to tentacruel,
+        "geodude" to geodude,
+        "graveler" to graveler,
+        "golem" to golem,
+        "ponyta" to ponyta,
+        "rapidash" to rapidash,
+        "slowpoke" to slowpoke,
+        "slowbro" to slowbro,
+        "magnemite" to magnemite,
+        "magneton" to magneton,
+        "farfetch'd" to farfetchd,
+        "doduo" to doduo,
+        "dodrio" to dodrio,
+        "seel" to seel,
+        "dewgong" to dewgong,
+        "grimer" to grimer,
+        "muk" to muk,
+        "shellder" to shellder,
+        "cloyster" to cloyster,
+        "gastly" to gastly,
+        "haunter" to haunter,
+        "gengar" to gengar,
+        "onix" to onix,
+        "drowzee" to drowzee,
+        "hypno" to hypno,
+        "krabby" to krabby,
+        "kingler" to kingler,
+        "exeggcute" to exeggcute,
+        "exeggutor" to exeggutor,
+        "cubone" to cubone,
+        "marowak" to marowak,
+        "hitmonlee" to hitmonlee,
+        "hitmonchan" to hitmonchan,
+        "lickitung" to lickitung,
+        "koffing" to koffing,
+        "weezing" to weezing,
+        "rhyhorn" to rhyhorn,
+        "rhydon" to rhydon,
+        "chansey" to chansey,
+        "tangela" to tangela,
+        "kangaskhan" to kangaskhan,
+        "horsea" to horsea,
+        "seadra" to seadra,
+        "goldeen" to goldeen,
+        "seaking" to seaking,
+        "staryu" to staryu,
+        "starmie" to starmie,
+        "mr.mime" to mrMime,
+        "scyther" to scyther,
+        "jynx" to jynx,
+        "electabuzz" to electabuzz,
+        "magmar" to magmar,
+        "pinsir" to pinsir,
+        "tauros" to tauros,
+        "magikarp" to magikarp,
+        "gyarados" to gyarados,
+        "lapras" to lapras,
+        "ditto" to ditto,
+        "eevee" to eevee,
+        "vaporeon" to vaporeon,
+        "jolteon" to jolteon,
+        "flareon" to flareon,
+        "porygon" to porygon,
+        "omanyte" to omanyte,
+        "omastar" to omastar,
+        "kabuto" to kabuto,
+        "kabutops" to kabutops,
+        "aerodactyl" to aerodactyl,
+        "snorlax" to snorlax,
+        "articuno" to articuno,
+        "zapdos" to zapdos,
+        "moltres" to moltres,
+        "mewtwo" to mewtwo,
+        "mew" to mew
+    )
 
-    // tela de inicio
+    // Tela de inicio
     println("Digite o nome do Treinador 1: ")
     val nomePlayer1 = readln() ?: ""
     println("Digite o nome do Treinador 2: ")
@@ -1025,7 +1155,7 @@ fun main() {
         "Pikachu", "Pinsir", "Poliwhirl", "Ponyta", "Porygon", "Primeape",
         "Psyduck", "Raticate", "Rhyhorn", "Sandshrew", "Seadra", "Seaking",
         "Seel", "Slowbro", "Staryu", "Tangela", "Venonat", "Vileplume",
-        "Vulpix", "Wartortle", "Weepinbell", "Weezing",
+        "Vulpix", "Wartortle", "Weepinbell", "Weezing"
     )
 
     val pokemonsNivel50a100 = listOf(
@@ -1041,7 +1171,7 @@ fun main() {
         "Victreebel", "Vileplume"
     )
 
-    // Escolha do torneio
+// Escolha do torneio
     println("Escolha o nível para a batalha: \n1 - Nível 1 (1 ao 19)\n2 - Nível 2 (20 ao 49)\n3 - Nível 3 (50 ao 100)")
     val nivelEscolhido = readLine()?.toIntOrNull()
 
@@ -1083,7 +1213,7 @@ fun main() {
         }
     }
 
-    // Processo de escolha
+// Processo de escolha
     for (i in 1..3) {
         escolherPokemon(timePlayer1, nomePlayer1)
         escolherPokemon(timePlayer2, nomePlayer2)
@@ -1094,36 +1224,68 @@ fun main() {
     println("$nomePlayer2: ${timePlayer2.joinToString(", ")}")
 
     println("\nTimes definidos! Aperte ENTER para gerar os confrontos")
-    readLine()  // Espera o ENTER para gerar os confrontos
+    readLine()  // Espera o ENTER
 
-    // Embaralha os times para gerar confrontos aleatórios
     val time1Embaralhado = timePlayer1.shuffled()
     val time2Embaralhado = timePlayer2.shuffled()
 
-    gerarConfrontos(time1Embaralhado, time2Embaralhado, nomePlayer1, nomePlayer2)
-}
+    // Função para simular o confronto entre dois Pokémon
+    fun simularConfronto(poke1: String, poke2: String, mapa: Map<String, Map<String, Any>>): String {
+        val p1 = mapa[poke1.lowercase()] ?: return "$poke1 não encontrado"
+        val p2 = mapa[poke2.lowercase()] ?: return "$poke2 não encontrado"
 
-// Função para simular o confronto entre dois Pokémon
-fun simularConfronto(pokemon1: String, pokemon2: String): String {
-    return when ((1..2).random()) {
-        1 -> "$pokemon1 vence de $pokemon2"
-        else -> "$pokemon2 vence de $pokemon1"
+        val nivel1 = p1["NIVEL"] as Int
+        val ataque1 = p1["ATAQUE"] as Int
+        val defesa1 = p1["DEFESA"] as Int
+        val tipos1 = p1.keys.filter { it != "NIVEL" && it != "ATAQUE" && it != "DEFESA" }
+        val vantagens1 = tipos1.flatMap { tipo -> (p1[tipo] as List<String>).flatMap { it.split(", ") } }
+
+        val nivel2 = p2["NIVEL"] as Int
+        val ataque2 = p2["ATAQUE"] as Int
+        val defesa2 = p2["DEFESA"] as Int
+        val tipos2 = p2.keys.filter { it != "NIVEL" && it != "ATAQUE" && it != "DEFESA" }
+
+        // Determina se o Pokémon tem vantagem de tipo sobre o outro
+        val poke1TemVantagem = tipos1.any { tipo1 -> vantagens1.contains(tipo1) && tipos2.contains(tipo1) }
+        val poke2TemVantagem = tipos2.any { tipo2 -> vantagens1.contains(tipo2) && tipos1.contains(tipo2) }
+
+        val status1 = if (poke1TemVantagem) 1.5 else 1.0
+        val status2 = if (poke2TemVantagem) 1.5 else 1.0
+
+        val poder1 = ((nivel1 + ataque1) * status1 + defesa1).toInt()
+        val poder2 = ((nivel2 + ataque2) * status2 + defesa2).toInt()
+
+        println(">> $poke1: (($nivel1 + $ataque1) * $status1) + $defesa1 = $poder1")
+        println(">> $poke2: (($nivel2 + $ataque2) * $status2) + $defesa2 = $poder2")
+
+        return when {
+            poder1 > poder2 -> "$poke1 vence"
+            poder2 > poder1 -> "$poke2 vence"
+            else -> "Empate"
+        }
     }
-}
 
-// Função para gerar os confrontos 3x3
-fun gerarConfrontos(time1: List<String>, time2: List<String>, nome1: String, nome2: String) {
-    println("\nConfrontos:")
-    for (i in 0 until 3) {
-        val poke1 = time1[i]
-        val poke2 = time2[i]
-        println("Rodada ${i + 1}:")
-        println("$nome1: $poke1 vs $nome2: $poke2")
-        println("Resultado: ${simularConfronto(poke1, poke2)}\n")
+    // Função para gerar confrontos
+    fun gerarConfrontos(
+        timePlayer1: List<String>,
+        timePlayer2: List<String>,
+        nome1: String,
+        nome2: String,
+        mapa: Map<String, Map<String, Any>>
+    ) {
+        println("\nConfrontos:")
+        for (i in 0 until 3) {
+            val poke1 = timePlayer1[i]
+            val poke2 = timePlayer2[i]
+            println("Rodada ${i + 1}:")
+            println("$nome1: $poke1 vs $nome2: $poke2")
+
+            // Simula o confronto
+            val resultado = simularConfronto(poke1, poke2, mapa)
+            println(resultado)
+        }
     }
-}
 
-
-//for((chave, nivel) in mewtwo){
-//println("O elemento é $chave -> o nivel é $nivel")
-//}
+// Chamando a função para gerar os confrontos
+    gerarConfrontos(time1Embaralhado, time2Embaralhado, nomePlayer1, nomePlayer2, mapaPokemons)
+    }
