@@ -1123,6 +1123,7 @@ fun gerarConfrontos(time1: List<String>, time2: List<String>, nome1: String, nom
     }
 }
 
+
 //for((chave, nivel) in mewtwo){
 //println("O elemento é $chave -> o nivel é $nivel")
 //}
