@@ -1,5 +1,24 @@
 fun main() {
 
+    // Elementos
+    //"ACO" to listOf("FADA","GELO", "PEDRA")
+    //"AGUA" to listOf("FOGO", "TERRA", "PEDRA")
+    //"DRAGAO" to listOf("DRAGAO")
+    //"ELETRICO" to listOf("AGUA", "VOADOR")
+    //"FADA" to listOf("DRAGAO", "LUTADOR","SOMBRIO")
+    //"FASTASMA" to listOf("PSIQUICO", "FASTASMA"),
+    //"FOGO" to listOf("PLANTA", "GELO", "INSETO", "AÇO")
+    //"GELO" to listOf("VOADOR", "DRAGAO", "TERRA", "PLANTA")
+    //"INSETO" to listOf("PLANTA", "PSÍQUICO")
+    //"LUTADOR" to listOf("ACO", "PEDRA", "GELO", "NORMAL", "SOMBRIO")
+    //"NORMAL" to listOf(""),
+    //"PEDRA" to listOf("FOGO", "VOADOR", "INSETO", "GELO")
+    //"PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
+    //"PSIQUICO" to listOf("LUTADOR", "VENENO")
+    //"TERRA" to listOf("ELETRICO", "ACO", "VENENO", "PEDRA", "FOGO")
+    //"VENENO" to listOf("FADA, PLANTA")
+    //"VOADOR" to listOf("INSETO", "PLANTA", "LUTADOR"
+
     val bulbasaur = mapOf(
         "PLANTA" to listOf("ÁGUA, TERRA, PEDRA"),
         "VENENO" to listOf("FADA, PLANTA"),
@@ -974,47 +993,55 @@ fun main() {
         "DEFESA" to 90,
     )
 
-// === Tela de Início ===
-    println("Digite o nome do Player 1: ")
+    // tela de inicio
+    println("Digite o nome do Treinador 1: ")
     val nomePlayer1 = readln() ?: ""
-    println("Digite o nome do Player 2: ")
+    println("Digite o nome do Treinador 2: ")
     val nomePlayer2 = readLine() ?: ""
 
     println("A batalha será entre:")
-    println("Player 1: $nomePlayer1")
-    println("Player 2: $nomePlayer2")
+    println("Treinador 1: $nomePlayer1")
+    println("Treinador 2: $nomePlayer2")
 
     println("Pressione a tecla ENTER para prosseguir com a batalha ")
     readLine()
 
-// Listas de Pokémon para os torneios
     val pokemonsNivel1a19 = listOf(
-        "abra", "geodude", "magnemite", "poliwag", "bellsprout", "goldeen", "mankey", "rattata",
-        "caterpie", "grimer", "metapod", "shellder", "diglett", "horsea", "nidoran♀", "slowpoke",
-        "ditto", "kakuna", "nidoran♂", "spearow", "doduo", "koffing", "oddish", "tentacool",
-        "ekans", "krabby", "paras", "voltorb", "exeggcute", "magikarp", "pidgey", "weedle", "zubat"
+        "Abra", "Bellsprout", "Bulbasaur", "Caterpie", "Charmander", "Cubone",
+        "Diglett", "Ditto", "Doduo", "Dratini", "Ekans", "Exeggcute",
+        "Geodude", "Goldeen", "Grimer", "Horsea", "Kakuna", "Koffing",
+        "Krabby", "Magikarp", "Mankey", "Magnemite", "Metapod", "Nidoran♀",
+        "Nidoran♂", "Oddish", "Paras", "Pidgey", "Poliwag", "Rattata",
+        "Shellder", "Slowpoke", "Spearow", "Squirtle", "Tentacool", "Voltorb",
+        "Weedle", "Zubat"
     )
 
     val pokemonsNivel20a49 = listOf(
-        "bulbasaur", "charmander", "pikachu", "ivysaur", "charmeleon", "wartortle",
-        "poliwhirl", "machop", "magnemite", "graveler", "politoed", "nidoking", "nidoqueen",
-        "weepinbell", "kadabra", "pidgeotto", "fearow", "zubat", "rhyhorn", "parasect", "rhydon"
+        "Arbok", "Beedrill", "Butterfree", "Charmeleon", "Clefairy", "Drowzee",
+        "Dugtrio", "Eevee", "Electrode", "Gastly", "Gloom", "Golbat",
+        "Graveler", "Growlithe", "Haunter", "Ivysaur", "Jigglypuff", "Kabuto",
+        "Kadabra", "Kingler", "Machoke", "Machop", "Marowak", "Meowth",
+        "Muk", "Nidorina", "Nidorino", "Omanyte", "Persian", "Pidgeotto",
+        "Pikachu", "Pinsir", "Poliwhirl", "Ponyta", "Porygon", "Primeape",
+        "Psyduck", "Raticate", "Rhyhorn", "Sandshrew", "Seadra", "Seaking",
+        "Seel", "Slowbro", "Staryu", "Tangela", "Venonat", "Vileplume",
+        "Vulpix", "Wartortle", "Weepinbell", "Weezing",
     )
 
     val pokemonsNivel50a100 = listOf(
-        "aerodactyl", "alakazam", "arcanine", "blastoise", "chansey", "charizard",
-        "clefable", "cloyster", "dewgong", "dodrio", "dragonair", "dragonite",
-        "electabuzz", "exeggutor", "farfetch'd", "fearow", "flareon", "gengar",
-        "golduck", "golem", "gyarados", "hitmonchan", "hitmonlee", "hypno", "jolteon",
-        "jynx", "kabutops", "kangaskhan", "lapras", "lickitung", "machamp", "magmar",
-        "magneton", "marowak", "mr.mime", "nidoking", "nidoqueen", "ninetales", "omastar",
-        "onix", "parasect", "persian", "pidgeot", "pinsir", "poliwrath", "primeape",
-        "raichu", "rapidash", "rhydon", "sandslash", "scyther", "slowbro", "snorlax",
-        "starmie", "tangela", "tauros", "tentacruel", "vaporeon", "venomoth", "venusaur",
-        "victreebel", "vileplume"
+        "Aerodactyl", "Alakazam", "Arcanine", "Blastoise", "Chansey", "Charizard",
+        "Clefable", "Cloyster", "Dewgong", "Dodrio", "Dragonair", "Dragonite",
+        "Electabuzz", "Exeggutor", "Farfetch'D", "Fearow", "Flareon", "Gengar",
+        "Golduck", "Golem", "Gyarados", "Hitmonchan", "Hitmonlee", "Hypno", "Jolteon",
+        "Jynx", "Kabutops", "Kangaskhan", "Lapras", "Lickitung", "Machamp", "Magmar",
+        "Magneton", "Marowak", "Mr.Mime", "Nidoking", "Nidoqueen", "Ninetales", "Omastar",
+        "Onix", "Parasect", "Pidgeot", "Pinsir", "Poliwrath", "Primeape",
+        "Raichu", "Rapidash", "Rhydon", "Sandslash", "Scyther", "Slowbro", "Snorlax",
+        "Starmie", "Tauros", "Tentacruel", "Vaporeon", "Venomoth", "Venusaur",
+        "Victreebel", "Vileplume"
     )
 
-// Escolha do torneio
+    // Escolha do torneio
     println("Escolha o nível para a batalha: \n1 - Nível 1 (1 ao 19)\n2 - Nível 2 (20 ao 49)\n3 - Nível 3 (50 ao 100)")
     val nivelEscolhido = readLine()?.toIntOrNull()
 
@@ -1028,8 +1055,8 @@ fun main() {
         }
     }
 
-    val timePlayer1Nomes = mutableListOf<String>()
-    val timePlayer2Nomes = mutableListOf<String>()
+    val timePlayer1 = mutableListOf<String>()
+    val timePlayer2 = mutableListOf<String>()
 
     fun mostrarPokemonsDisponiveis(pokemons: List<String>) {
         println("\nPokémons disponíveis:")
@@ -1056,14 +1083,46 @@ fun main() {
         }
     }
 
-// Processo de escolha
+    // Processo de escolha
     for (i in 1..3) {
-        escolherPokemon(timePlayer1Nomes, nomePlayer1)
-        escolherPokemon(timePlayer2Nomes, nomePlayer2)
+        escolherPokemon(timePlayer1, nomePlayer1)
+        escolherPokemon(timePlayer2, nomePlayer2)
     }
 
     println("\nTimes finais:")
-    println("$nomePlayer1: ${timePlayer1Nomes.joinToString(", ")}")
-    println("$nomePlayer2: ${timePlayer2Nomes.joinToString(", ")}")
+    println("$nomePlayer1: ${timePlayer1.joinToString(", ")}")
+    println("$nomePlayer2: ${timePlayer2.joinToString(", ")}")
 
+    println("\nTimes definidos! Aperte ENTER para gerar os confrontos")
+    readLine()  // Espera o ENTER para gerar os confrontos
+
+    // Embaralha os times para gerar confrontos aleatórios
+    val time1Embaralhado = timePlayer1.shuffled()
+    val time2Embaralhado = timePlayer2.shuffled()
+
+    gerarConfrontos(time1Embaralhado, time2Embaralhado, nomePlayer1, nomePlayer2)
 }
+
+// Função para simular o confronto entre dois Pokémon
+fun simularConfronto(pokemon1: String, pokemon2: String): String {
+    return when ((1..2).random()) {
+        1 -> "$pokemon1 vence de $pokemon2"
+        else -> "$pokemon2 vence de $pokemon1"
+    }
+}
+
+// Função para gerar os confrontos 3x3
+fun gerarConfrontos(time1: List<String>, time2: List<String>, nome1: String, nome2: String) {
+    println("\nConfrontos:")
+    for (i in 0 until 3) {
+        val poke1 = time1[i]
+        val poke2 = time2[i]
+        println("Rodada ${i + 1}:")
+        println("$nome1: $poke1 vs $nome2: $poke2")
+        println("Resultado: ${simularConfronto(poke1, poke2)}\n")
+    }
+}
+
+//for((chave, nivel) in mewtwo){
+//println("O elemento é $chave -> o nivel é $nivel")
+//}
