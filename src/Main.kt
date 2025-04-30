@@ -1244,10 +1244,11 @@ fun main() {
         val ataque2 = p2["ATAQUE"] as Int
         val defesa2 = p2["DEFESA"] as Int
         val tipos2 = p2.keys.filter { it != "NIVEL" && it != "ATAQUE" && it != "DEFESA" }
+        val vantagens2 = tipos2.flatMap { tipo -> (p2[tipo] as List<String>).flatMap { it.split(", ") } }
 
         // Determina se o Pokémon tem vantagem de tipo sobre o outro
-        val poke1TemVantagem = tipos1.any { tipo1 -> vantagens1.contains(tipo1) && tipos2.contains(tipo1) }
-        val poke2TemVantagem = tipos2.any { tipo2 -> vantagens1.contains(tipo2) && tipos1.contains(tipo2) }
+        val poke1TemVantagem = tipos2.any { tipo -> vantagens1.contains(tipo) }
+        val poke2TemVantagem = tipos1.any { tipo -> vantagens2.contains(tipo) }
 
         val status1 = if (poke1TemVantagem) 1.5 else 1.0
         val status2 = if (poke2TemVantagem) 1.5 else 1.0
@@ -1288,4 +1289,33 @@ fun main() {
 
 // Chamando a função para gerar os confrontos
     gerarConfrontos(time1Embaralhado, time2Embaralhado, nomePlayer1, nomePlayer2, mapaPokemons)
+
+    var vitoriasPlayer1 = 0
+    var vitoriasPlayer2 = 0
+
+    println("\nConfrontos:")
+    for (i in 0 until 3) {
+        val poke1 = timePlayer1[i]
+        val poke2 = timePlayer2[i]
+        println("Rodada ${i + 1}:")
+        println("$nomePlayer1: $poke1 vs $nomePlayer2: $poke2")
+
+        // Simula o confronto
+        val resultado = simularConfronto(poke1, poke2, mapaPokemons)
+        println(resultado)
+
+        // Conta as vitórias
+        when {
+            resultado.contains("$poke1 vence") -> vitoriasPlayer1++
+            resultado.contains("$poke2 vence") -> vitoriasPlayer2++
+        }
     }
+
+// Declarando o vencedor
+    println("\nResultado final da MD3:")
+    when {
+        vitoriasPlayer1 > vitoriasPlayer2 -> println("$nomePlayer1 é o vencedor!")
+        vitoriasPlayer2 > vitoriasPlayer1 -> println("$nomePlayer2 é o vencedor!")
+        else -> println("Empate na MD3!")
+    }
+}
